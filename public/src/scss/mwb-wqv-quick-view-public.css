@@ -1,0 +1,411 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+ *, ::after, ::before {
+  box-sizing: border-box;
+}
+body.mwb-wqv__overlay-pop {
+  overflow: hidden!important;  
+}
+.mwb-modal__quick-view-wrap * {
+  margin: 0;
+}
+.mwb-modal__quick-view-wrap h2 {
+  font-size: 2rem;
+}
+.mwb-modal__quick-view-wrap h1,.mwb-modal__quick-view-wrap h2,.mwb-modal__quick-view-wrap h3,.mwb-modal__quick-view-wrap h4,.mwb-modal__quick-view-wrap h5,.mwb-modal__quick-view-wrap h6 {
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: .5rem;
+}
+.mwb-modal__quick-view-wrap a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+}
+.mwb-modal__quick-view-wrap img {
+  vertical-align: middle;
+  border-style: none;
+}
+.mwb_wqv_quickview_modal_button {
+  border-radius: 4px;
+  border: none;
+  box-sizing: content-box;
+ 
+  max-width: 200px;
+  outline: none;
+  padding: 8px 10px;
+  text-transform: capitalize;
+  word-break: break-word;
+  line-height: unset;
+}
+.mwb_wqv_quickview_modal_button:hover {
+  cursor: pointer;
+}
+/*Modal-Css*/
+.mwb-modal__quick-view-wrap {
+    display: none; 
+    position: fixed; 
+    z-index: 99999999999; 
+    padding-top: 45px;
+    padding-bottom: 30px;
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+.mwb-modal__quick-view-content {
+  position: relative;
+  background-color: #fff;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  border-radius:2px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 100%;
+}
+.mwb_wqv_dropdown_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+.mwb_wqv_dropdown_wrapper label {
+max-width: 80px;
+flex: 0 0 100%;
+}
+.mwb_wqv_dropdown_wrapper select {
+padding: 5px 10px;
+}
+.mwb_wqv_dropdown_wrapper select:hover {
+cursor: pointer;
+}
+.mwb-modal-close {
+  background: transparent;
+  border: 0;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}  
+.mwb-modal__quick-view-wrap .mwb-modal-close:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+.mwb-modal-close span {
+  color: #7c7c7c;
+  font-size: 28px;
+  font-weight: 500;
+  transition: 0.25s ease;
+}  
+.mwb-modal-close:hover span {
+  color: #202020;
+  transform: rotate(90deg);
+}
+.mwb_view_more_detail_button {
+  background: transparent;
+  border: none;
+  text-decoration: underline;
+  display: block;
+  margin: 10px 0;
+  color: inherit;
+}
+.mwb_view_more_detail_button:hover {
+  cursor: pointer;
+}
+.mwb_view_more_detail_button:focus, .mwb_view_more_detail_button:hover {  
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+
+}
+@media screen and (max-width:991px) {
+  .mwb-modal__quick-view-content {
+      width: 90%;
+  }
+}
+/*Modal-Css-End*/
+
+/*Modal-Content*/
+.mwb_wqv_strike_through{
+  text-decoration:line-through;
+}
+
+#mwb-modal__quick-view {
+  padding: 15px;
+}
+
+.mwb-modal__content-row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.mwb-modal__col-img img {
+  width: 100%;
+}
+.mwb-modal__col-img {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.mwb-modal__col-content {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.mwb_modal__col-content-wrap {
+  padding: 15px;
+}
+.mwb_modal__col-title {
+  color: #3d3d3d;
+  font-size: 26px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+button.single_add_to_cart_button {
+  background-color: #2a72b8;
+  border: 0;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1px solid #2a72b8;
+  border-radius: 50px;
+  transition: .15s ease;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+.mwb_modal__product-price-wrap h5 {
+  font-size: 16px;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+}
+.mwb_modal__product-price-wrap p {
+  font-size: 14px;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.mwb_modal__add-to-cart-wrap {
+  margin-top: 25px;
+}
+.mwb_modal__add-to-cart-wrap .single_add_to_cart_button:hover {
+  cursor: pointer;
+}
+.mwb-modal__col-content form {
+  margin-top: 20px;
+}
+.mwb-modal__col-content .quantity label {
+  font-size: 14px;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.mwb-modal__col-content .mwb-quantity input[type="number"] {
+  width: 100%;
+  max-width: 110px;
+  padding: 10px;
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+.mwb_wqv_td .quantity input {
+  width: 80px;
+}
+.mwb-modal__col-content .quantity input[type="number"]:focus {
+  outline:none;
+}
+.mwb_modal__description-section {
+  padding-top: 30px;
+}
+.mwb_modal__description-section p {
+  font-size: 14px;
+  color: #3d3d3d;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+.mwb-modal_content-wrapper {
+  max-width: 80%;
+  margin: 0 auto;
+}
+.mwb_wqv_anim_default {
+  animation: animateTop 0.6s ease;
+  visibility: visible;
+  opacity: 1;
+}
+@keyframes animateTop {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity:1;
+  }
+}
+.mwb_wqv_anim1 {
+  animation: animateTop 0.6s ease;
+}
+.mwb_wqv_anim1_reverse {
+  animation: animateBottom 0.7s ease;
+  opacity: 0;
+}
+@keyframes animateBottom {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity:0;
+  }
+}
+.mwb_wqv_anim2 {
+  opacity: 1;
+  visibility: visible;
+  animation: scale 1s ease; 
+  
+}
+@keyframes scale {
+  0%{
+    transform:  scale(0);
+  }
+  50% {
+    transform: scale(1.1) ;
+  }
+  100% {
+    transform: scale(1) ;
+  }
+}
+.mwb_wqv_anim2_reverse {
+  animation: scaleout 0.6s ease; 
+}
+@keyframes scaleout {
+
+  0%{
+    transform:  scale(1);
+    opacity: 1;
+    visibility: visible;
+  }
+  75%{
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(0) ;
+    opacity: 0;
+    visibility: hidden;
+      
+  }
+}  
+
+/* stock notice css */
+.mwb_wqv_instock {
+color:#008000
+}
+.mwb_wqv_outofstock {
+color:#ff4500
+}
+
+/* / Themes compatibility css / */
+.products .product-list-view .product-buttons button.mwb_wqv_quickview_modal_button {
+margin-left: 10px;
+}
+
+.product button.mwb_wqv_quickview_modal_button {
+margin-bottom: 10px;
+}
+.product-buttons a.mwb_wqv_quickview_modal_button {
+float: none!important;
+display: inline-block;
+padding-left: 0;
+
+}
+.products .product-list-view .product-buttons a.mwb_wqv_quickview_modal_button {
+padding-top: 0;
+margin-left: 5px;
+vertical-align: middle;
+}
+
+/* / End of theme compatibility css / */
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+  .mwb-modal__col-img {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+  .mwb-modal__col-content {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+  .mwb-modal_content-wrapper {
+      max-width: 100%;
+      margin: 0 auto;
+  }
+}
+@media screen and (max-width:767px) {
+  .mwb-modal_content-wrapper {
+      max-width: 100%;
+      margin: 0 auto;
+  }
+  .mwb-modal__col-img {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  .mwb-modal__col-content {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  .mwb-modal__content-row {
+      flex-direction: column;
+  }
+  #mwb-modal__quick-view {
+      padding:35px 15px;
+  }
+  .mwb_modal__col-content-wrap {
+      margin-top: 20px;
+  }
+  .mwb-modal-close { 
+      top:7px;
+  }
+}
